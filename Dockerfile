@@ -88,3 +88,4 @@ RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates unzip &
     rm "${JAVA_HOME}/jre/lib/security/README.txt" && \
     apk del build-dependencies && \
     rm "/tmp/"*
+RUN npm install npm -g 
